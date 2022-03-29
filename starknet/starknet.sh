@@ -1,19 +1,18 @@
+if [[ -z "$ALCHEMY" ]]; then
+    echo -e "\e[1m\e[31mMust provide ALCHEMY in environment\e[0m" 1>&2
+
+    exit 1
+fi
+
 echo "=================================================="
-echo -e "\e[1m\e[32m1. Preparation before installation... \e[0m" && sleep 1
-echo -e "\e[1m\e[32mPaste your link from alchemy: \e[0m" && sleep 1
 
-read alchemy_link
-
-
-echo "=================================================="
-
-echo -e "\e[1m\e[32m2. Updating dependencies... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m1. Updating dependencies... \e[0m" && sleep 1
 sudo apt update
 sudo apt -y upgrade
 
 echo "=================================================="
 
-echo -e "\e[1m\e[32m3. Installing required dependencies... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m2. Installing required dependencies... \e[0m" && sleep 1
 sudo apt -y install curl git
 sudo apt -y install python3 python3-venv python3-dev
 sudo apt -y install build-essential libgmp-dev pkg-config libssl-dev
@@ -23,7 +22,7 @@ curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
 
 echo "=================================================="
 
-echo -e "\e[1m\e[32m4. Setting up Starknet fullnode ... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m3. Setting up Starknet fullnode ... \e[0m" && sleep 1
 cd $HOME
 rm -rf starknet
 
@@ -50,7 +49,7 @@ After=network.target
 User=$USER
 Type=simple
 WorkingDirectory=$HOME/pathfinder/py
-ExecStart=/bin/bash -c \"source $HOME/pathfinder/py/.venv/bin/activate && /usr/local/bin/pathfinder --http-rpc=\"0.0.0.0:9545\" --ethereum.url $alchemy_link\"
+ExecStart=/bin/bash -c \"source $HOME/pathfinder/py/.venv/bin/activate && /usr/local/bin/pathfinder --http-rpc=\"0.0.0.0:9545\" --ethereum.url $ALCHEMY\"
 Restart=on-failure
 LimitNOFILE=65535
 

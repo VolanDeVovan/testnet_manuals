@@ -16,8 +16,8 @@ screen -S starknet
 ```
 
 Use script below for a quick installation:
-After run you have to paste the copied link you got on alchemy.com 
-
+Before running the script, you must execute this command, replacing the link with the one you received from alchemy.com
+export ALCHEMY="https://eth-goerli.alchemyapi.io/v2/YOUR_UNIQUE_TOKEN"
 ```
 wget -O starknet.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/starknet/starknet.sh && chmod +x starknet.sh && ./starknet.sh
 ```
