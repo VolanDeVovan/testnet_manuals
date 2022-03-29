@@ -42,7 +42,7 @@ geth --datadir data init ./network/testnet/genesis.json
 
 # load bootnodes
 cd $HOME
-wget https://raw.githubusercontent.com/kj89/testnet_manuals/main/masa/bootnodes.txt
+wget https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/masa/bootnodes.txt
 MASA_BOOTNODES=$(sed ':a; N; $!ba; s/\n/,/g' bootnodes.txt)
 
 # create masad service

@@ -2,7 +2,7 @@
 
 ### run script below to prepare your node
 ```
-wget -O cosmic-horizon_testnet.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/cosmic-horizon/cosmic-horizon_testnet.sh && chmod +x cosmic-horizon_testnet.sh && ./cosmic-horizon_testnet.sh
+wget -O cosmic-horizon_testnet.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/cosmic-horizon/cosmic-horizon_testnet.sh && chmod +x cosmic-horizon_testnet.sh && ./cosmic-horizon_testnet.sh
 ```
 
 ### load variables

@@ -2,7 +2,7 @@
 
 ### run script below to prepare your node
 ```
-wget -O archway_devnet.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/archway/archway_devnet.sh && chmod +x archway_devnet.sh && ./archway_devnet.sh
+wget -O archway_devnet.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/archway/archway_devnet.sh && chmod +x archway_devnet.sh && ./archway_devnet.sh
 ```
 
 ### load variables

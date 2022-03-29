@@ -2,12 +2,12 @@
 
 ### Run script bellow to prepare your mainnet RPC server
 ```
-wget -O agoric_mainnet.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/agoric/agoric_mainnet.sh && chmod +x agoric_mainnet.sh && ./agoric_mainnet.sh
+wget -O agoric_mainnet.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/agoric/agoric_mainnet.sh && chmod +x agoric_mainnet.sh && ./agoric_mainnet.sh
 ```
 
 ### Run script bellow to prepare your devnet RPC server
 ```
-wget -O agoric_devnet.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/agoric/agoric_devnet.sh && chmod +x agoric_devnet.sh && ./agoric_devnet.sh
+wget -O agoric_devnet.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/agoric/agoric_devnet.sh && chmod +x agoric_devnet.sh && ./agoric_devnet.sh
 ```
 
 ## Validator setup and modify
@@ -29,7 +29,7 @@ This script will help you to estimate how much time it will take to fully synchr
 
 It measures average blocks per minute that are being synchronized for period of 10 minutes and then gives you results
 ```
-wget -O agoric_synctime.py https://raw.githubusercontent.com/kj89/testnet_manuals/main/agoric/agoric_synctime.py && python3 ./agoric_synctime.py
+wget -O agoric_synctime.py https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/agoric/agoric_synctime.py && python3 ./agoric_synctime.py
 ```
 
 ## Usefull commands

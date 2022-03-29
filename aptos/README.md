@@ -8,7 +8,7 @@
 
 Use script below for a quick installation:
 ```
-wget -O aptos_docker.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/aptos/aptos_docker.sh && chmod +x aptos_docker.sh && ./aptos_docker.sh
+wget -O aptos_docker.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/aptos/aptos_docker.sh && chmod +x aptos_docker.sh && ./aptos_docker.sh
 ```
 
 ## update aptos
@@ -24,14 +24,14 @@ docker compose up -d
 ## update seeds
 ```
 sudo wget -O /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/v4.23.1/yq_linux_amd64 && sudo chmod +x /usr/local/bin/yq
-wget -O seeds.yaml https://raw.githubusercontent.com/kj89/testnet_manuals/main/aptos/seeds.yaml
+wget -O seeds.yaml https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/aptos/seeds.yaml
 yq ea -i 'select(fileIndex==0).full_node_networks[0].seeds = select(fileIndex==1).seeds | select(fileIndex==0)' $HOME/aptos/public_full_node.yaml seeds.yaml
 docker restart aptos-fullnode-1
 ```
 
 Get your node information:
 ```
-wget -O aptos_identity.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/aptos/aptos_identity.sh && chmod +x aptos_identity.sh && ./aptos_identity.sh
+wget -O aptos_identity.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/aptos/aptos_identity.sh && chmod +x aptos_identity.sh && ./aptos_identity.sh
 ```
 
 ## useful commands
@@ -88,7 +88,7 @@ screen -S aptos
 
 Use script below for a quick installation:
 ```
-wget -O aptos.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/aptos/aptos.sh && chmod +x aptos.sh && ./aptos.sh
+wget -O aptos.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/aptos/aptos.sh && chmod +x aptos.sh && ./aptos.sh
 ```
 
 ## update aptos
@@ -104,7 +104,7 @@ systemctl restart aptosd
 ## update seeds
 ```
 sudo wget -O /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/v4.23.1/yq_linux_amd64 && sudo chmod +x /usr/local/bin/yq
-wget -O seeds.yaml https://raw.githubusercontent.com/kj89/testnet_manuals/main/aptos/seeds.yaml
+wget -O seeds.yaml https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/aptos/seeds.yaml
 yq ea -i 'select(fileIndex==0).full_node_networks[0].seeds = select(fileIndex==1).seeds | select(fileIndex==0)' $HOME/.aptos/config/public_full_node.yaml seeds.yaml
 systemctl restart aptosd
 ```

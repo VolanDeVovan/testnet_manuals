@@ -15,8 +15,8 @@ if [ -f "$bash_profile" ]; then
 fi
 
 # devnet configuration
-CELESTIA_APP_VERSION=$(curl -s "https://raw.githubusercontent.com/kj89/testnet_manuals/main/celestia/latest_app.txt")
-CELESTIA_NODE_VERSION=$(curl -s "https://raw.githubusercontent.com/kj89/testnet_manuals/main/celestia/latest_node.txt")
+CELESTIA_APP_VERSION=$(curl -s "https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/celestia/latest_app.txt")
+CELESTIA_NODE_VERSION=$(curl -s "https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/celestia/latest_node.txt")
 if [[ ! $CELESTIA_CHAIN ]]; then
 echo 'export CELESTIA_CHAIN=devnet-2' >> $HOME/.bash_profile
 fi
@@ -165,7 +165,7 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $
 celestia-appd unsafe-reset-all
 
 # download address book
-wget -O $HOME/.celestia-app/config/addrbook.json "https://raw.githubusercontent.com/kj89/testnet_manuals/main/celestia/addrbook.json"
+wget -O $HOME/.celestia-app/config/addrbook.json "https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/celestia/addrbook.json"
 
 # set client config
 celestia-appd config chain-id $CELESTIA_CHAIN

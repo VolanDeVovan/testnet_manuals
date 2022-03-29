@@ -4,7 +4,7 @@ login as root
 
 ### Run script bellow to prepare your server
 ```
-wget -O install.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/ssv/install.sh && chmod +x install.sh && ./install.sh
+wget -O install.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/ssv/install.sh && chmod +x install.sh && ./install.sh
 ```
 
 ## Set up SSV operator

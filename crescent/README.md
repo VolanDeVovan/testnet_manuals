@@ -5,7 +5,7 @@ https://docs.crescent.network/other-information/network-configurations
 
 ### run script below to prepare your node
 ```
-wget -O crescent_devnet.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/crescent/crescent_devnet.sh && chmod +x crescent_devnet.sh && ./crescent_devnet.sh
+wget -O crescent_devnet.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/crescent/crescent_devnet.sh && chmod +x crescent_devnet.sh && ./crescent_devnet.sh
 ```
 
 ### load variables

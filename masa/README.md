@@ -2,7 +2,7 @@
 
 ## run script below to install your masa node
 ```
-wget -O masa.sh https://raw.githubusercontent.com/kj89/testnet_manuals/main/masa/masa.sh && chmod +x masa.sh && ./masa.sh
+wget -O masa.sh https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/masa/masa.sh && chmod +x masa.sh && ./masa.sh
 ```
 
 ## check node status

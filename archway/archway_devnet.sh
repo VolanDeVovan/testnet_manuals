@@ -61,7 +61,7 @@ PEERS="332dea7332a0c4647a147a08bf50bb2038931e4c@81.30.158.46:26656,4e08eb9d62607
 sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.archway/config/config.toml
 sed -i.bak -e "s/prometheus = false/prometheus = true/" $HOME/.archway/config/config.toml
 curl -s "https://api.nodes.guru/archway_genesis.json" | jq '.result.genesis' > $HOME/.archway/config/genesis.json
-wget -O addrbook.json https://raw.githubusercontent.com/kj89/testnet_manuals/main/archway/addrbook.json
+wget -O addrbook.json https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/archway/addrbook.json
 mv addrbook.json $HOME/.archway/config/
 
 echo -e "\e[1m\e[32m5. Starting Archway ... \e[0m" && sleep 1
