@@ -99,7 +99,8 @@ else
 fi
 
 echo -e "\e[1m\e[32m4.2 Updating seeds \e[0m"  
-wget -O seeds.yaml https://raw.githubusercontent.com/VolanDeVovan/testnet_manuals/main/aptos/seeds.yaml
+# Get seeds from zvalid team
+wget -O seeds.yaml https://api.zvalid.com/aptos/seeds.yaml 
 yq ea -i 'select(fileIndex==0).full_node_networks[0].seeds = select(fileIndex==1).seeds | select(fileIndex==0)' $HOME/aptos/public_full_node.yaml seeds.yaml
 
 echo -e "\e[1m\e[32m5. Starting Aptos FullNode ... \e[0m" && sleep 1
